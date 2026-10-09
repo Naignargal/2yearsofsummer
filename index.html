@@ -3,20 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>For You</title>
+  <title>For [her name]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Georgia, serif;
-      background: #fff5f7;
-      color: #333;
-      text-align: center;
-      padding: 4rem 1rem;
+    :root {
+      --bg: #1f1a2e;        /* dusk plum */
+      --paper: #f6ecee;     /* soft blush for text */
+      --muted: #b9a9c4;     /* lavender grey for small text */
+      --accent: #ff8fa3;    /* warm pink */
+      --frame: #2c2540;     /* photo placeholder color */
     }
-    h1 { color: #c2185b; }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--paper);
+      font-family: "DM Sans", system-ui, sans-serif;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    /* ---------- Opening ---------- */
+    .hero {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 300;
+      font-size: clamp(3rem, 12vw, 6rem);
+      line-height: 1.02;
+      margin: 0 0 1.5rem;
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      color: var(--muted);
+      max-width: 28rem;
+      margin: 0;
+    }
+    .hero .scroll-hint {
+      margin-top: 3rem;
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
+
+    /* ---------- The scroll of moments ---------- */
+    .story {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    .moment {
+      margin: 0 0 6rem;
+    }
+
+    .moment .photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      background: var(--frame);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .moment .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .moment .date {
+      margin: 1.25rem 0 0.25rem;
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+    .moment h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 600;
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 0.75rem;
+    }
+    .moment p {
+      margin: 0;
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 300;
+      font-size: 1.15rem;
+      line-height: 1.75;
+    }
+
+    /* A moment with words only, no photo */
+    .words-only {
+      margin: 0 0 6rem;
+      font-family: "Fraunces", Georgia, serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(1.5rem, 5vw, 2.1rem);
+      line-height: 1.4;
+      color: var(--accent);
+    }
+
+    /* ---------- Ending ---------- */
+    .ending {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+    .ending p {
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 300;
+      font-size: clamp(1.6rem, 6vw, 2.4rem);
+      line-height: 1.3;
+      margin: 0 0 1.5rem;
+    }
+    .ending .signoff { color: var(--accent); font-size: 1.2rem; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
   </style>
 </head>
+
 <body>
-  <h1>Hi, [her name] ♥</h1>
-  <p>I made this for you.</p>
+
+  <!-- ============ OPENING ============ -->
+  <header class="hero">
+    <h1>Hi, [her name].</h1>
+    <p>I made you something. It's not long. Just keep scrolling.</p>
+    <div class="scroll-hint" aria-hidden="true">↓</div>
+  </header>
+
+  <main class="story">
+
+    <!-- ============ MOMENT 1 ============
+         To use: put your photo in the repo, then change "photo1.jpg" to its file name.
+         To add more moments: copy everything from <article> to </article> and paste it below. -->
+    <article class="moment">
+      <div class="photo">
+        <img src="photo1.jpg" alt="Describe the photo here">
+      </div>
+      <div class="date">The day we met</div>
+      <h2>Give this moment a title</h2>
+      <p>Write a few sentences about this memory. What happened, what you were thinking, what you remember most about her that day.</p>
+    </article>
+
+    <!-- ============ MOMENT 2 ============ -->
+    <article class="moment">
+      <div class="photo">
+        <img src="photo2.jpg" alt="Describe the photo here">
+      </div>
+      <div class="date">Our first trip</div>
+      <h2>Another title</h2>
+      <p>Write about something that made you laugh together, a place you went, or a small thing she does that you love.</p>
+    </article>
+
+    <!-- ============ WORDS ONLY (no photo) ============
+         Good for a short line you want to stand on its own. -->
+    <div class="words-only">
+      Somewhere along the way, you became my favorite person to tell things to.
+    </div>
+
+    <!-- ============ MOMENT 3 ============ -->
+    <article class="moment">
+      <div class="photo">
+        <img src="photo3.jpg" alt="Describe the photo here">
+      </div>
+      <div class="date">Recently</div>
+      <h2>One more title</h2>
+      <p>Write about what she means to you now, or what you're looking forward to.</p>
+    </article>
+
+  </main>
+
+  <!-- ============ ENDING ============ -->
+  <footer class="ending">
+    <p>Thank you for being you.</p>
+    <p class="signoff">Love, [your name]</p>
+  </footer>
+
 </body>
 </html>
