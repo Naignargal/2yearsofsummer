@@ -10,17 +10,14 @@
 
   <style>
     :root {
-      --bg: #1f1a2e;        /* dusk plum */
-      --paper: #f6ecee;     /* soft blush for text */
-      --muted: #b9a9c4;     /* lavender grey for small text */
-      --accent: #ff8fa3;    /* warm pink */
-      --frame: #2c2540;     /* photo placeholder color */
+      --bg: #1f1a2e;
+      --paper: #f6ecee;
+      --muted: #b9a9c4;
+      --accent: #ff8fa3;
+      --frame: #2c2540;
     }
-
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
       background: var(--bg);
@@ -29,8 +26,6 @@
       line-height: 1.7;
       font-size: 1.05rem;
     }
-
-    /* ---------- Opening ---------- */
     .hero {
       min-height: 100vh;
       min-height: 100svh;
@@ -49,45 +44,19 @@
       margin: 0 0 1.5rem;
       letter-spacing: -0.02em;
     }
-    .hero p {
-      color: var(--muted);
-      max-width: 28rem;
-      margin: 0;
-    }
-    .hero .scroll-hint {
-      margin-top: 3rem;
-      color: var(--accent);
-      font-size: 0.95rem;
-    }
+    .hero p { color: var(--muted); max-width: 28rem; margin: 0; }
+    .hero .scroll-hint { margin-top: 3rem; color: var(--accent); font-size: 0.95rem; }
 
-    /* ---------- The scroll of moments ---------- */
-    .story {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 0 1.5rem 4rem;
-    }
-
-    .moment {
-      margin: 0 0 6rem;
-    }
-
+    .story { max-width: 40rem; margin: 0 auto; padding: 0 1.5rem 4rem; }
+    .moment { margin: 0 0 6rem; }
     .moment .photo {
       width: 100%;
       background: var(--frame);
       border-radius: 4px;
       overflow: hidden;
     }
-    .moment .photo img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .moment .date {
-      margin: 1.25rem 0 0.25rem;
-      color: var(--accent);
-      font-size: 0.9rem;
-    }
+    .moment .photo img { width: 100%; height: auto; display: block; }
+    .moment .date { margin: 1.25rem 0 0.25rem; color: var(--accent); font-size: 0.9rem; }
     .moment h2 {
       font-family: "Fraunces", Georgia, serif;
       font-weight: 600;
@@ -102,8 +71,6 @@
       font-size: 1.15rem;
       line-height: 1.75;
     }
-
-    /* A moment with words only, no photo */
     .words-only {
       margin: 0 0 6rem;
       font-family: "Fraunces", Georgia, serif;
@@ -113,13 +80,7 @@
       line-height: 1.4;
       color: var(--accent);
     }
-
-    /* ---------- Ending ---------- */
-    .ending {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 4rem 1.5rem 6rem;
-    }
+    .ending { max-width: 40rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
     .ending p {
       font-family: "Fraunces", Georgia, serif;
       font-weight: 300;
@@ -128,10 +89,7 @@
       margin: 0 0 1.5rem;
     }
     .ending .signoff { color: var(--accent); font-size: 1.2rem; }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
 </head>
 
@@ -148,7 +106,7 @@
 
     <article class="moment">
       <div class="photo">
-        <img src="photo1.jpg" alt="Her smiling with her chin resting on her hands, a city street at night behind her" loading="lazy">
+        <img src="IMG_4269.jpeg" alt="The two of us hugging cheek to cheek, smiling, in front of a painting of a blue lamppost" loading="lazy">
       </div>
       <div class="date">Date or place</div>
       <h2>Title for this moment</h2>
@@ -157,7 +115,7 @@
 
     <article class="moment">
       <div class="photo">
-        <img src="photo2.jpg" alt="The two of us hugging in a night-time selfie with city lights and old buildings behind us" loading="lazy">
+        <img src="IMG_4364.jpeg" alt="Her smiling softly in a glass-roofed museum courtyard full of trees and flowers" loading="lazy">
       </div>
       <div class="date">Date or place</div>
       <h2>Title for this moment</h2>
@@ -166,7 +124,7 @@
 
     <article class="moment">
       <div class="photo">
-        <img src="photo3.jpg" alt="Her in a lime green top, smiling at a restaurant table" loading="lazy">
+        <img src="IMG_4586.jpeg" alt="The two of us leaning close in a cozy selfie, her with a side braid and a sly smile" loading="lazy">
       </div>
       <div class="date">Date or place</div>
       <h2>Title for this moment</h2>
@@ -175,7 +133,7 @@
 
     <article class="moment">
       <div class="photo">
-        <img src="photo4.jpg" alt="Him grinning in a warm, lit-up restaurant" loading="lazy">
+        <img src="IMG_4752.jpeg" alt="The two of us in a selfie, her in a maroon turtleneck and gold flower earrings" loading="lazy">
       </div>
       <div class="date">Date or place</div>
       <h2>Title for this moment</h2>
@@ -184,7 +142,7 @@
 
     <article class="moment">
       <div class="photo">
-        <img src="photo5.jpg" alt="The two of us in a selfie inside a grand, blue and gold cathedral" loading="lazy">
+        <img src="100_0222.jpeg" alt="Her in oval sunglasses and a striped shirt, smiling in warm sunlight" loading="lazy">
       </div>
       <div class="date">Date or place</div>
       <h2>Title for this moment</h2>
@@ -193,7 +151,7 @@
 
     <article class="moment">
       <div class="photo">
-        <img src="photo6.jpg" alt="Her looking out a train window with a little smile" loading="lazy">
+        <img src="100_0276.jpeg" alt="Her grinning over her shoulder in front of a bright orange and red painted wall" loading="lazy">
       </div>
       <div class="date">Date or place</div>
       <h2>Title for this moment</h2>
@@ -202,7 +160,7 @@
 
     <article class="moment">
       <div class="photo">
-        <img src="photo7.jpg" alt="The two of us at a lookout with the city skyline and blue sky behind us" loading="lazy">
+        <img src="IMG_5386.jpeg" alt="Her smiling in golden light in front of a patterned wall, a little black bag across her shoulder" loading="lazy">
       </div>
       <div class="date">Date or place</div>
       <h2>Title for this moment</h2>
@@ -211,7 +169,97 @@
 
     <article class="moment">
       <div class="photo">
-        <img src="photo8.jpg" alt="Her smiling in a bright cafe booth" loading="lazy">
+        <img src="IMG_5512.jpeg" alt="Her sitting in a white blouse under an arch of woven branches in a green garden" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="IMG_5698.jpeg" alt="The two of us dressed up, smiling in front of a wall of blue and yellow tiles" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="IMG_5846.jpeg" alt="Her beaming in a light blue cap and gown, arms full of flowers, on graduation day" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="photo11.jpg" alt="Describe this photo here" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="photo12.jpg" alt="Describe this photo here" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="photo13.jpg" alt="Describe this photo here" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="photo14.jpg" alt="Describe this photo here" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="photo15.jpg" alt="Describe this photo here" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="photo16.jpg" alt="Describe this photo here" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="photo17.jpg" alt="Describe this photo here" loading="lazy">
+      </div>
+      <div class="date">Date or place</div>
+      <h2>Title for this moment</h2>
+      <p>Your words for this photo go here.</p>
+    </article>
+
+    <article class="moment">
+      <div class="photo">
+        <img src="photo18.jpg" alt="Describe this photo here" loading="lazy">
       </div>
       <div class="date">Date or place</div>
       <h2>Title for this moment</h2>
